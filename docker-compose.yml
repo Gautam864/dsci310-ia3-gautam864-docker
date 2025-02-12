@@ -1,7 +1,7 @@
 
 services:
   analysis-env:
-    image: g864/dockerfile-practice 
+    image: g864/dockerfile-practice:latest 
     ports:
       - "8787:8787"  
     volumes:

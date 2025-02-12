@@ -8,3 +8,5 @@ RUN R -e "install.packages('remotes')" && \
 #  Run cowsay when the container starts
 CMD R -e "library(cowsay); say('Hello from Docker!', by = 'cow')"
 
+RUN Rscript -e "remotes::install_version('dplyr', version = '1.0.10', repos = 'https://cloud.r-project.org')"
+
